@@ -1,0 +1,47 @@
+PUSH 908
+PUSH 33
+ADD
+PUSH -55
+PUSH 2
+MUL
+DIV
+mem[0] = POP
+PUSH -789
+PUSH 37
+MUL
+PUSH 23
+ADD
+mem[1] = POP
+PUSH mem[1]
+PUSH mem[0]
+MUL
+PUSH 33
+SUB
+mem[2] = POP
+PUSH mem[2]
+PUSH mem[1]
+MUL
+PUSH mem[0]
+DIV
+PUSH 334
+PUSH mem[2]
+ADD
+SUB
+mem[3] = POP
+DEL = mem[3]
+DEL = mem[1]
+DEL = mem[0]
+PUSH 91
+PUSH 25
+SUB
+PUSH 447
+DIV
+PUSH 56
+ADD
+mem[2] = POP
+PUSH 204
+PUSH mem[2]
+ADD
+PUSH 19
+MUL
+RET = POP
